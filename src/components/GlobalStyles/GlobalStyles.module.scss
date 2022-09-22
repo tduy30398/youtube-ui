@@ -4,6 +4,9 @@
     --black: #000;
     --white: rgba(255, 255, 255, 1);
     --text-color: #333;
+    --search-border-radius: 3px;
+
+    --font-family: 'Roboto', 'Noto', sans-serif;
 }
 
 * {
@@ -18,8 +21,10 @@ html {
 
 body {
     font-family: var(--font-family);
-    font-size: 1.6rem;
-    line-height: 1.5;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-family: var(--font-family);
     text-rendering: optimizeSpeed;
     color: var(--text-color);
 }
