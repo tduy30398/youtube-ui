@@ -1,19 +1,16 @@
 import classNames from 'classnames/bind';
 import styles from './Header.module.scss';
 import { Link } from 'react-router-dom';
-import HeadlessTippy from '@tippyjs/react/headless';
+
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
-import { default as PopperWrapper } from '~/components/Popper/Wrapper';
+
 import config from '~/config';
 import images from '~/assets/images';
 import Button from '~/components/Button';
-import { useEffect, useState } from 'react';
-import SearchResult from '~/components/SearchResult/SearchResult';
 import Menu from '~/components/Popper/Menu/Menu';
 import {
     BellIcon,
-    ClearIcon,
     EarthIcon,
     EllipsisIcon,
     FeedbackIcon,
@@ -21,7 +18,6 @@ import {
     LanguageIcon,
     MoonIcon,
     QuestionIcon,
-    SearchIcon,
     SettingIcon,
     SignOutIcon,
     StudioIcon,
@@ -29,6 +25,7 @@ import {
     UserIcon,
     VideoIcon,
 } from '~/components/Icons';
+import Search from '../Search';
 
 const cx = classNames.bind(styles);
 
@@ -239,15 +236,7 @@ const MENU_ITEMS = [
 ];
 
 function Header() {
-    const [searchResult, setSearchResult] = useState([]);
-
     const currentUser = true;
-
-    useEffect(() => {
-        setTimeout(() => {
-            setSearchResult([]);
-        }, 0);
-    }, []);
 
     const userMenu = [
         {
@@ -282,34 +271,7 @@ function Header() {
                     </Link>
                 </Tippy>
 
-                <HeadlessTippy
-                    interactive
-                    visible={searchResult.length > 0}
-                    render={(attrs) => (
-                        <div className={cx('search-result-list')} tabIndex="-1" {...attrs}>
-                            <PopperWrapper>
-                                <SearchResult />
-                                <SearchResult />
-                                <SearchResult />
-                                <SearchResult />
-                                <SearchResult />
-                                <SearchResult />
-                            </PopperWrapper>
-                        </div>
-                    )}
-                >
-                    <div className={cx('search')}>
-                        <input placeholder="Search" />
-                        <button className={cx('clear')}>
-                            <ClearIcon />
-                        </button>
-                        <Tippy content="Search" placement="bottom">
-                            <button className={cx('search-btn')}>
-                                <SearchIcon />
-                            </button>
-                        </Tippy>
-                    </div>
-                </HeadlessTippy>
+                <Search />
 
                 <div className={cx('actions')}>
                     {currentUser ? (
@@ -323,6 +285,7 @@ function Header() {
                             <Tippy content="Notifications">
                                 <button className={cx('action-btn')}>
                                     <BellIcon />
+                                    <span className={cx('badge')}>99</span>
                                 </button>
                             </Tippy>
 

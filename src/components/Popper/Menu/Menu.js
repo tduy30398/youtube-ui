@@ -39,33 +39,36 @@ function Menu({ children, items = [] }) {
         });
     };
 
+    // Set lại trang đầu tiên
+    const handleToFirstPage = () => {
+        setHistory((prev) => prev.slice(0, 1));
+    };
+
+    // Khi click vào nút back trên header của menu, sẽ quay
+    // về 1 cấp: trừ đi phần tử cuối cùng của mảng
+    const handleBack = () => {
+        setHistory((prev) => prev.slice(0, prev.length - 1));
+    };
+
     return (
-        <HeadlessTippy
-            trigger="click"
-            interactive
-            offset={[-105, 5]}
-            render={(attrs) => (
-                <div className={cx('menu-list')} tabIndex="-1" {...attrs}>
-                    <PopperWrapper>
-                        {history.length > 1 && (
-                            <MenuHeader
-                                title={current.title}
-                                onBack={() => {
-                                    // Khi click vào nút back trên header của menu, sẽ quay
-                                    // về 1 cấp: trừ đi phần tử cuối cùng của mảng
-                                    setHistory((prev) => prev.slice(0, prev.length - 1));
-                                }}
-                            />
-                        )}
-                        {renderItems()}
-                    </PopperWrapper>
-                </div>
-            )}
-            // Khi click ra ngoài sẽ set lại trang đầu tiên
-            onHide={() => setHistory((prev) => prev.slice(0, 1))}
-        >
-            {children}
-        </HeadlessTippy>
+        <div>
+            <HeadlessTippy
+                trigger="click"
+                interactive
+                offset={[-105, 5]}
+                render={(attrs) => (
+                    <div className={cx('menu-list')} tabIndex="-1" {...attrs}>
+                        <PopperWrapper>
+                            {history.length > 1 && <MenuHeader title={current.title} onBack={handleBack} />}
+                            <div className={cx('menu-body')}>{renderItems()}</div>
+                        </PopperWrapper>
+                    </div>
+                )}
+                onHide={handleToFirstPage}
+            >
+                {children}
+            </HeadlessTippy>
+        </div>
     );
 }
 

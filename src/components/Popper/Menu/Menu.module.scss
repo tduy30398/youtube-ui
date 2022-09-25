@@ -6,6 +6,10 @@
     }
 }
 
+.menu-body {
+    overflow-y: auto;
+}
+
 .menu-item {
     line-height: 2rem;
     font-size: 1.4rem;
@@ -27,7 +31,9 @@
 
 .menu-header {
     position: relative;
-    height: 50px;
+    height: 40px;
+    flex-shrink: 0;
+    border-bottom: 1px solid rgba(18, 18, 26, 0.12);
 }
 
 .back-btn {

@@ -3,8 +3,8 @@ import styles from './SearchResult.module.scss';
 
 const cx = classNames.bind(styles);
 
-function SearchResult() {
-    return <div className={cx('search-result')}>abc</div>;
+function SearchResult({ data }) {
+    return <div className={cx('search-result')}>{data.nickname}</div>;
 }
 
 export default SearchResult;
