@@ -1,12 +1,22 @@
 .wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     min-width: 100px;
+    padding: 9px 8px;
+    border-radius: 4px;
     font-size: 1.4rem;
-    font-weight: 600;
+    font-weight: 700;
     cursor: pointer;
-    min-height: 36px;
+    max-height: 36px;
     font-family: var(--font-family);
+    background-color: var(--white);
     border: 1px solid transparent;
     user-select: none;
+
+    + .wrapper {
+        margin-left: 8px;
+    }
 
     + .wrapper {
         margin-left: 8px;
@@ -21,7 +31,12 @@
 .icon {
     display: inline-block;
     width: 24px;
+    height: 24px;
     text-align: center;
+}
+
+.title {
+    font-weight: 500;
 }
 
 // Button types
