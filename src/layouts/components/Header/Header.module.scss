@@ -1,7 +1,7 @@
 .wrapper {
     --search-height: 30px;
     --search-btn-width: 54px;
-    --input-width: 548px;
+    --input-width: 508px;
 
     width: 100%;
     height: var(--header-height);
@@ -16,11 +16,34 @@
 
 .inner {
     height: 100%;
-    width: 1334px;
+    width: var(--layout-width);
     max-width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.logo-area {
+    margin-left: 3px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-top: 3px;
+    padding: 8px;
+}
+
+.sidebar-menu-btn {
+    margin-right: 8px;
+    border-radius: 50%;
+    padding: 7px 4px 4px 4px;
+    background-color: transparent;
+    cursor: pointer;
+
+    &:active {
+        background-color: rgb(218, 218, 218);
+    }
 }
 
 // Actions

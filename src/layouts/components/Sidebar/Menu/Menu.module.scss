@@ -1,0 +1,37 @@
+.menu-1 {
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(18, 18, 26, 0.12);
+}
+
+.menu-item {
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    line-height: 1.2rem;
+    font-weight: 500;
+
+    &.active {
+        color: #ff0000;
+
+        .icon {
+            display: none;
+        }
+
+        .active-icon {
+            display: block;
+        }
+    }
+
+    &:hover {
+        background-color: #e5e5e5;
+    }
+}
+
+.active-icon {
+    display: none;
+}
+
+.title {
+    margin-left: 20px;
+}

@@ -14,6 +14,7 @@ import {
     EarthIcon,
     EllipsisIcon,
     FeedbackIcon,
+    HamburgerIcon,
     KeyboardIcon,
     LanguageIcon,
     MoonIcon,
@@ -265,11 +266,16 @@ function Header() {
     return (
         <div className={cx('wrapper')}>
             <div className={cx('inner')}>
-                <Tippy content="Youtube Home" delay={[400, 0]}>
-                    <Link to={config.routes.home} className={cx('logo')}>
-                        <img src={images.logo} alt="Youtube" />
-                    </Link>
-                </Tippy>
+                <div className={cx('logo-area')}>
+                    <button className={cx('sidebar-menu-btn')}>
+                        <HamburgerIcon />
+                    </button>
+                    <Tippy content="Youtube Home" delay={[400, 0]}>
+                        <Link to={config.routes.home} className={cx('logo')}>
+                            <img src={images.logo} alt="Youtube" />
+                        </Link>
+                    </Tippy>
+                </div>
 
                 <Search />
 
