@@ -37,8 +37,6 @@ function Search() {
             const result = await searchService.search(debouncedValue);
             setSearchResult(result);
         })();
-
-        // Đây là get đc lấy từ object do import *
     }, [debouncedValue]);
 
     const handleClear = () => {
