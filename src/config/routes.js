@@ -1,4 +1,4 @@
-const routes = {
+export const routes = {
     home: '/',
     explore: '/explore',
     shorts: '/shorts',
@@ -16,4 +16,21 @@ const routes = {
     tv: '/tv',
 };
 
-export default routes;
+export const video = {
+    video1: '/watch=y9j45wv6bm',
+    video2: '/watch=75572xsfei',
+    video3: '/watch=2dx726h6m6',
+    video4: '/watch=4w8rr74od0',
+    video5: '/watch=oltt90io7t',
+    video6: '/watch=12hn68v8e6',
+    video7: '/watch=ywq1blg5ms',
+    video8: '/watch=yzzhk9ci6r',
+    video9: '/watch=xnuzdaqjjp',
+    video10: '/watch=1otxl9n8rq',
+    video11: '/watch=dz38de10k1',
+    video12: '/watch=fk5g1sygk4',
+    video13: '/watch=pv3ff9f6sn',
+    video14: '/watch=bcnneo9obf',
+    video15: '/watch=1mugwf155f',
+    video16: '/watch=byy1y4heip',
+};

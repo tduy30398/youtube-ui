@@ -1,4 +1,5 @@
 import config from '~/config';
+import WatchVideoLayout from '~/layouts/WatchVideoLayout';
 
 import Home from '~/pages/Home';
 import Explore from '~/pages/Explore';
@@ -15,6 +16,8 @@ import Studio from '~/pages/Studio';
 import Music from '~/pages/Music';
 import Kids from '~/pages/Kids';
 import TV from '~/pages/TV';
+import VideoPage1 from '~/pages/VideoPage1';
+import VideoPage2 from '~/pages/VideoPage2';
 
 const publicRoutes = [
     { path: config.routes.home, component: Home },
@@ -32,6 +35,8 @@ const publicRoutes = [
     { path: config.routes.music, component: Music },
     { path: config.routes.kids, component: Kids },
     { path: config.routes.tv, component: TV },
+    { path: config.video.video1, component: VideoPage1, layout: WatchVideoLayout },
+    { path: config.video.video2, component: VideoPage2, layout: WatchVideoLayout },
 ];
 
 const privateRoutes = [];
