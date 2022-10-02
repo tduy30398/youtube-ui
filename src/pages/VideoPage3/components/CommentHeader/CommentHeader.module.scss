@@ -1,0 +1,118 @@
+.home__video-comment-header {
+    margin: 20px 0 26px 0;
+}
+
+.home__video-comment-tool {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.home__video-comment-number {
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin-right: 30px;
+    padding-bottom: 4px;
+}
+
+.home__video-comment-sorter {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.home__video-sort-icon {
+    margin-right: 6px;
+}
+
+.home__video-sort-title {
+    color: var(--text-color);
+    margin-bottom: 4px;
+}
+
+.home__video-comment-input-wrapper {
+    display: flex;
+}
+
+.home__video-comment-input-avatar {
+    margin-right: 16px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+.home__video-comment-submit {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.home__video-comment-input {
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background-color: transparent;
+    padding-bottom: 4px;
+    width: 100%;
+    border-bottom: 1px solid rgba(18, 18, 26, 0.12);
+    background: linear-gradient(#535353, #535353) bottom / 0% 2px no-repeat transparent;
+    transition: 0.3s;
+
+    &:focus-within {
+        background-size: 100% 2px;
+    }
+}
+
+.home__video-comment-action {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.home__video-comment-action-emoji {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.home__video-comment-action-btn {
+    align-items: center;
+    display: flex;
+}
+
+.home__video-comment-action-cancel {
+    color: #606060;
+    cursor: pointer;
+    padding: 8px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home__video-comment-action-comment {
+    user-select: none;
+    margin-left: 10px;
+    border-radius: 2px;
+    width: 100px;
+    height: 36px;
+    color: #606060;
+    background-color: #ececec;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home__video-comment-action-comment-active {
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 2px;
+    width: 100px;
+    height: 36px;
+    color: #ffe6ee;
+    background-color: #065fd4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

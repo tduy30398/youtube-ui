@@ -64,18 +64,18 @@ function Home() {
                         uploadTime={'4 years ago'}
                     />
                     <Video
-                        to={config.video.video1}
+                        to={config.video.video3}
                         thumb={
-                            'https://i.ytimg.com/vi/nuMQ_fVoBf4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBECGlp6CNv8w9Lo_cQhGFB9-1z3g'
+                            'https://i.ytimg.com/vi/3fi7uwBU-CE/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDGdstWL7hJy2EsDWQLY6yozXCkGQ'
                         }
                         avatar={
-                            'https://yt3.ggpht.com/ytc/AMLnZu9a5PvTT42-7syeUt-ip9gNXN5U9pPGV7oY2mlgJg=s88-c-k-c0x00ffffff-no-rj'
+                            'https://yt3.ggpht.com/OBz9ECRB9DrAVXCYV2RNoQbCuWT5QENiPcbHNaPOshDGbacrkMBASQqK7F1eLny7iMgkLarJHoo=s88-c-k-c0x00ffffff-no-rj'
                         }
-                        runtime={'8:22'}
-                        title={'[Hướng dẫn Guitar] CÔ GÁI MỞ ĐƯỜNG | Nhạc Sĩ: Xuân Giao | Quạt disco cơ bản & nâng cao'}
-                        channelName={'Phương Dung Socola'}
-                        view={'33K views'}
-                        uploadTime={'6 months ago'}
+                        runtime={'5:41'}
+                        title={'Chi Pu | ANH ƠI Ở LẠI - Official M/V (Chuyện Cám Tấm) (치푸)'}
+                        channelName={'Chi Pu Official'}
+                        view={'108M views'}
+                        uploadTime={'Apr 23, 2019'}
                     />
                     <Video
                         to={config.video.video1}

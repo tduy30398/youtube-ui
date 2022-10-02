@@ -18,6 +18,7 @@ import Kids from '~/pages/Kids';
 import TV from '~/pages/TV';
 import VideoPage1 from '~/pages/VideoPage1';
 import VideoPage2 from '~/pages/VideoPage2';
+import VideoPage3 from '~/pages/VideoPage3';
 
 const publicRoutes = [
     { path: config.routes.home, component: Home },
@@ -37,6 +38,7 @@ const publicRoutes = [
     { path: config.routes.tv, component: TV },
     { path: config.video.video1, component: VideoPage1, layout: WatchVideoLayout },
     { path: config.video.video2, component: VideoPage2, layout: WatchVideoLayout },
+    { path: config.video.video3, component: VideoPage3, layout: WatchVideoLayout },
 ];
 
 const privateRoutes = [];

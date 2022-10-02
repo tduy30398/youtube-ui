@@ -26,6 +26,7 @@ function Video({ to, thumb, avatar, runtime, title, channelName, view, uploadTim
                         </Tippy>
                         <div className={cx('home__video-sub-info')}>
                             <span className={cx('home__video-views')}>{view}</span>
+                            <span className={cx('home__video-split')}>{'•'}</span>
                             <span className={cx('home__video-upload-time')}>{uploadTime}</span>
                         </div>
                     </div>
