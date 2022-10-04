@@ -35,9 +35,12 @@
 }
 
 .sidebar-menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-right: 8px;
     border-radius: 50%;
-    padding: 7px 4px 4px 4px;
+    padding: 4px;
     background-color: transparent;
     cursor: pointer;
 

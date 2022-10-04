@@ -45,6 +45,23 @@ export const BellIcon = ({ width = '2.4rem', height = '2.4rem', className }) => 
     </svg>
 );
 
+export const BellSubscribeIcon = ({ width = '2rem', height = '2rem', className }) => (
+    <svg
+        className={className}
+        width={width}
+        height={height}
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M10,20h4c0,1.1-0.9,2-2,2S10,21.1,10,20z M20,17.35V19H4v-1.65l2-1.88v-5.15c0-2.92,1.56-5.22,4-5.98V3.96 c0-1.42,1.49-2.5,2.99-1.76C13.64,2.52,14,3.23,14,3.96l0,0.39c2.44,0.75,4,3.06,4,5.98v5.15L20,17.35z M19,17.77l-2-1.88v-5.47 c0-2.47-1.19-4.36-3.13-5.1c-1.26-0.53-2.64-0.5-3.84,0.03C8.15,6.11,7,7.99,7,10.42v5.47l-2,1.88V18h14V17.77z"
+        ></path>
+    </svg>
+);
+
 export const SearchIcon = ({ width = '2.4rem', height = '2.4rem', className }) => (
     <svg
         className={className}
@@ -741,7 +758,7 @@ export const RedYoutubeTvIcon = ({ width = '2.4rem', height = '2.4rem', classNam
     </svg>
 );
 
-export const LikedIcon = ({ width = '1.8rem', height = '1.8rem', className }) => (
+export const LikedIcon = ({ width = '2rem', height = '2rem', className }) => (
     <svg
         className={className}
         width={width}
@@ -758,7 +775,7 @@ export const LikedIcon = ({ width = '1.8rem', height = '1.8rem', className }) =>
     </svg>
 );
 
-export const LikedActiveIcon = ({ width = '1.8rem', height = '1.8rem', className }) => (
+export const LikedActiveIcon = ({ width = '2rem', height = '2rem', className }) => (
     <svg
         className={className}
         width={width}
@@ -775,7 +792,41 @@ export const LikedActiveIcon = ({ width = '1.8rem', height = '1.8rem', className
     </svg>
 );
 
-export const DislikedIcon = ({ width = '1.8rem', height = '1.8rem', className }) => (
+export const LikedCommentIcon = ({ width = '1.8rem', height = '1.8rem', className }) => (
+    <svg
+        className={className}
+        width={width}
+        height={height}
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M18.77,11h-4.23l1.52-4.94C16.38,5.03,15.54,4,14.38,4c-0.58,0-1.14,0.24-1.52,0.65L7,11H3v10h4h1h9.43 c1.06,0,1.98-0.67,2.19-1.61l1.34-6C21.23,12.15,20.18,11,18.77,11z M7,20H4v-8h3V20z M19.98,13.17l-1.34,6 C18.54,19.65,18.03,20,17.43,20H8v-8.61l5.6-6.06C13.79,5.12,14.08,5,14.38,5c0.26,0,0.5,0.11,0.63,0.3 c0.07,0.1,0.15,0.26,0.09,0.47l-1.52,4.94L13.18,12h1.35h4.23c0.41,0,0.8,0.17,1.03,0.46C19.92,12.61,20.05,12.86,19.98,13.17z"
+        ></path>
+    </svg>
+);
+
+export const LikedCommentActiveIcon = ({ width = '1.8rem', height = '1.8rem', className }) => (
+    <svg
+        className={className}
+        width={width}
+        height={height}
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M3,11h3v10H3V11z M18.77,11h-4.23l1.52-4.94C16.38,5.03,15.54,4,14.38,4c-0.58,0-1.14,0.24-1.52,0.65L7,11v10h10.43 c1.06,0,1.98-0.67,2.19-1.61l1.34-6C21.23,12.15,20.18,11,18.77,11z"
+        ></path>
+    </svg>
+);
+
+export const DislikedIcon = ({ width = '2rem', height = '2rem', className }) => (
     <svg
         className={className}
         width={width}
@@ -792,7 +843,7 @@ export const DislikedIcon = ({ width = '1.8rem', height = '1.8rem', className })
     </svg>
 );
 
-export const DislikedActiveIcon = ({ width = '1.8rem', height = '1.8rem', className }) => (
+export const DislikedActiveIcon = ({ width = '2rem', height = '2rem', className }) => (
     <svg
         className={className}
         width={width}
@@ -809,7 +860,41 @@ export const DislikedActiveIcon = ({ width = '1.8rem', height = '1.8rem', classN
     </svg>
 );
 
-export const ShareIcon = ({ width = '1.8rem', height = '1.8rem', className }) => (
+export const DislikedCommentIcon = ({ width = '1.8rem', height = '1.8rem', className }) => (
+    <svg
+        className={className}
+        width={width}
+        height={height}
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M17,4h-1H6.57C5.5,4,4.59,4.67,4.38,5.61l-1.34,6C2.77,12.85,3.82,14,5.23,14h4.23l-1.52,4.94C7.62,19.97,8.46,21,9.62,21 c0.58,0,1.14-0.24,1.52-0.65L17,14h4V4H17z M10.4,19.67C10.21,19.88,9.92,20,9.62,20c-0.26,0-0.5-0.11-0.63-0.3 c-0.07-0.1-0.15-0.26-0.09-0.47l1.52-4.94l0.4-1.29H9.46H5.23c-0.41,0-0.8-0.17-1.03-0.46c-0.12-0.15-0.25-0.4-0.18-0.72l1.34-6 C5.46,5.35,5.97,5,6.57,5H16v8.61L10.4,19.67z M20,13h-3V5h3V13z"
+        ></path>
+    </svg>
+);
+
+export const DislikedCommentActiveIcon = ({ width = '1.8rem', height = '1.8rem', className }) => (
+    <svg
+        className={className}
+        width={width}
+        height={height}
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M18,4h3v10h-3V4z M5.23,14h4.23l-1.52,4.94C7.62,19.97,8.46,21,9.62,21c0.58,0,1.14-0.24,1.52-0.65L17,14V4H6.57 C5.5,4,4.59,4.67,4.38,5.61l-1.34,6C2.77,12.85,3.82,14,5.23,14z"
+        ></path>
+    </svg>
+);
+
+export const ShareIcon = ({ width = '2rem', height = '2rem', className }) => (
     <svg
         className={className}
         width={width}
@@ -826,7 +911,7 @@ export const ShareIcon = ({ width = '1.8rem', height = '1.8rem', className }) =>
     </svg>
 );
 
-export const ScissorIcon = ({ width = '1.8rem', height = '1.8rem', className }) => (
+export const ScissorIcon = ({ width = '2rem', height = '2rem', className }) => (
     <svg
         className={className}
         width={width}
@@ -843,7 +928,7 @@ export const ScissorIcon = ({ width = '1.8rem', height = '1.8rem', className }) 
     </svg>
 );
 
-export const SaveIcon = ({ width = '1.8rem', height = '1.8rem', className }) => (
+export const SaveIcon = ({ width = '2rem', height = '2rem', className }) => (
     <svg
         className={className}
         width={width}
@@ -860,7 +945,7 @@ export const SaveIcon = ({ width = '1.8rem', height = '1.8rem', className }) => 
     </svg>
 );
 
-export const MoreIcon = ({ width = '1.8rem', height = '1.8rem', className }) => (
+export const MoreIcon = ({ width = '2rem', height = '2rem', className }) => (
     <svg
         className={className}
         width={width}
@@ -877,7 +962,24 @@ export const MoreIcon = ({ width = '1.8rem', height = '1.8rem', className }) => 
     </svg>
 );
 
-export const SortIcon = ({ width = '1.8rem', height = '1.8rem', className }) => (
+export const MoreVerticalIcon = ({ width = '2.4rem', height = '2.4rem', className }) => (
+    <svg
+        className={className}
+        width={width}
+        height={height}
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M12,16.5c0.83,0,1.5,0.67,1.5,1.5s-0.67,1.5-1.5,1.5s-1.5-0.67-1.5-1.5S11.17,16.5,12,16.5z M10.5,12 c0,0.83,0.67,1.5,1.5,1.5s1.5-0.67,1.5-1.5s-0.67-1.5-1.5-1.5S10.5,11.17,10.5,12z M10.5,6c0,0.83,0.67,1.5,1.5,1.5 s1.5-0.67,1.5-1.5S12.83,4.5,12,4.5S10.5,5.17,10.5,6z"
+        ></path>
+    </svg>
+);
+
+export const SortIcon = ({ width = '2rem', height = '2rem', className }) => (
     <svg
         className={className}
         width={width}
@@ -890,7 +992,7 @@ export const SortIcon = ({ width = '1.8rem', height = '1.8rem', className }) => 
     </svg>
 );
 
-export const EmojiIcon = ({ width = '1.8rem', height = '1.8rem', className }) => (
+export const EmojiIcon = ({ width = '2rem', height = '2rem', className }) => (
     <svg
         className={className}
         width={width}
@@ -903,6 +1005,53 @@ export const EmojiIcon = ({ width = '1.8rem', height = '1.8rem', className }) =>
             fillRule="evenodd"
             clipRule="evenodd"
             d="M12,2C6.48,2,2,6.48,2,12c0,5.52,4.48,10,10,10s10-4.48,10-10C22,6.48,17.52,2,12,2z M12,21c-4.96,0-9-4.04-9-9 c0-4.96,4.04-9,9-9s9,4.04,9,9C21,16.96,16.96,21,12,21z M17,13c0,1-1,4-5,4s-5-3-5-4C8,13,16,13,17,13z M6.05,10 C6.28,8.86,7.29,8,8.5,8s2.22,0.86,2.45,2H9.91C9.7,9.42,9.15,9,8.5,9s-1.2,0.42-1.41,1H6.05z M13.05,10c0.23-1.14,1.24-2,2.45-2 s2.22,0.86,2.45,2h-1.04c-0.21-0.58-0.76-1-1.41-1s-1.2,0.42-1.41,1H13.05z"
+        ></path>
+    </svg>
+);
+
+export const PlayIcon = ({ width = '4rem', height = '4rem', className }) => (
+    <svg
+        className={className}
+        width={width}
+        height={height}
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <path fillRule="evenodd" clipRule="evenodd" d="M6,4l12,8L6,20V4z"></path>
+    </svg>
+);
+
+export const ClockIcon = ({ width = '2.6rem', height = '2.6rem', className }) => (
+    <svg
+        className={className}
+        width={width}
+        height={height}
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M14.97,16.95L10,13.87V7h2v5.76l4.03,2.49L14.97,16.95z M12,3c-4.96,0-9,4.04-9,9s4.04,9,9,9s9-4.04,9-9S16.96,3,12,3 M12,2c5.52,0,10,4.48,10,10s-4.48,10-10,10S2,17.52,2,12S6.48,2,12,2L12,2z"
+        ></path>
+    </svg>
+);
+
+export const QueueIcon = ({ width = '2.6rem', height = '2.6rem', className }) => (
+    <svg
+        className={className}
+        width={width}
+        height={height}
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M21,16h-7v-1h7V16z M21,11H9v1h12V11z M21,7H3v1h18V7z M10,15l-7-4v8L10,15z"
         ></path>
     </svg>
 );

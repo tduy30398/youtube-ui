@@ -299,7 +299,7 @@ function Header() {
                                 <img
                                     className={cx('user-avatar')}
                                     src="https://yt3.ggpht.com/yti/AJo0G0mD_lS-q4dP0E025WFIeUP8Duqsc24RLbygR5kQzQ=s88-c-k-c0x00ffffff-no-rj-mo"
-                                    alt="Thanh Duy"
+                                    alt="avatar"
                                 />
                             </Menu>
                         </>

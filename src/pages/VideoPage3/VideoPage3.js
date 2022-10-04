@@ -13,6 +13,7 @@ import {
 import VideoAction from './components/VideoAction';
 import VideoDesc from './components/VideoDesc';
 import CommentHeader from './components/CommentHeader';
+import Comment from './components/Comment';
 
 const cx = classNames.bind(styles);
 
@@ -59,6 +60,52 @@ function VideoPage3() {
             />
             <div className={cx('home__video-comment-wrapper')}>
                 <CommentHeader />
+                <div className={cx('home__video-comment-list')}>
+                    <Comment
+                        img={
+                            'https://yt3.ggpht.com/ytc/AMLnZu88Y4PpXstpG_ivMv-362DpD3fjz36Ub5-ohg=s48-c-k-c0x00ffffff-no-rj'
+                        }
+                        userName={'Quynh Cao'}
+                        time={'3 years ago'}
+                        content={
+                            'Có thể nói đây là MV hay nhất của Chipu giàu ý nghĩa: người ta chỉ thấy nỗi đau của Tấm chứ mặc kệ nỗi đau của Cám'
+                        }
+                        likeNumber={'1.2K'}
+                    />
+                    <Comment
+                        img={
+                            'https://yt3.ggpht.com/ytc/AMLnZu8JF9n5n4NoVfM4z2PA9nHoGFccYBwbhiMB3VM56A=s48-c-k-c0x00ffffff-no-rj'
+                        }
+                        userName={'Vân Trần'}
+                        time={'1 year ago'}
+                        content={
+                            'Thật sự! Mình rất thích Chi Pu! Mặc dù live không được tốt nhưng chị ấy đã rất cố gắng để tạo ra những MV xuất sắc như này! Yêu chị lắm ạ!!!'
+                        }
+                        likeNumber={'2K'}
+                    />
+                    <Comment
+                        img={
+                            'https://yt3.ggpht.com/ytc/AMLnZu93VY8id8v_qILKhGokmQqM8LtI45NWVfO2K4bV=s48-c-k-c0x00ffffff-no-rj'
+                        }
+                        userName={'Thuy Vy'}
+                        time={'1 year ago'}
+                        content={
+                            'Sau sự ra đời thành công của MV Anh Ơi Ở LẠI của Chi đã tạo nên một cơn sóng đầy cảm hứng dành cho rất rất nhiều chị em tự lấy Cám làm hình ảnh ngôn xưng cho chính bản thân mình một cách đầy thiện cảm ❤'
+                        }
+                        likeNumber={'317'}
+                    />
+                    <Comment
+                        img={
+                            'https://yt3.ggpht.com/ytc/AMLnZu8chMfHuFsHjZbBMDeOzSKHejruDaURU6Q7EclW=s48-c-k-c0x00ffffff-no-rj'
+                        }
+                        userName={'Hien Nguyen'}
+                        time={'2 years ago'}
+                        content={
+                            'Thật sự là rất hay! Cấu hình đẹp, diễn có hồn và thật sự rất thấm thía! Cám đâu biết rằng khi nàng mãi ngắm nhìn vua thì cũng có một người ngây ngốc vì nàng, cái người ngày đầu cầm ô chạy đến ấy, chỉ vì hình ảnh Vua luôn phủ đầy ánh mắt Cám nên nàng đã chẳng thể biết được rằng, ở phía sau có một người âm thầm yêu nàng nhưng chỉ có thể bất lực đứng nhìn từ xa....'
+                        }
+                        likeNumber={'124'}
+                    />
+                </div>
             </div>
         </div>
     );

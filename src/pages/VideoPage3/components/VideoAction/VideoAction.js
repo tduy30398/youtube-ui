@@ -17,10 +17,8 @@ function VideoAction({ icon, activeIcon, title }) {
 
     return (
         <Tippy content={title ? title.toLowerCase() : 'more'} placement="bottom">
-            <div className={cx('video-player-action')}>
-                <span className={isActive ? cx('icon') : cx('active-icon')} onClick={handleActive}>
-                    {isActive ? icon : activeIcon}
-                </span>
+            <div className={cx('video-player-action')} onClick={handleActive}>
+                <span className={isActive ? cx('icon') : cx('active-icon')}>{isActive ? icon : activeIcon}</span>
                 <span className={cx('title')}>{title}</span>
             </div>
         </Tippy>

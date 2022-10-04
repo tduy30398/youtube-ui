@@ -11,14 +11,6 @@ function CommentHeader() {
     const [commentTexts, setCommentTexts] = useState('');
     const [isTyping, setIsTyping] = useState(false);
 
-    const handleInput = (e) => {
-        setCommentTexts(e.target.value);
-    };
-
-    const handleTyping = () => {
-        setIsTyping(true);
-    };
-
     const handleCancel = () => {
         setIsTyping(false);
         setCommentTexts('');
@@ -40,7 +32,7 @@ function CommentHeader() {
             <div className={cx('home__video-comment-input-wrapper')}>
                 <img
                     className={cx('home__video-comment-input-avatar')}
-                    alt="Thanh Duy"
+                    alt="avatar"
                     src="https://yt3.ggpht.com/yti/AJo0G0mD_lS-q4dP0E025WFIeUP8Duqsc24RLbygR5kQzQ=s88-c-k-c0x00ffffff-no-rj-mo"
                 />
                 <div className={cx('home__video-comment-submit')}>
@@ -48,8 +40,12 @@ function CommentHeader() {
                         value={commentTexts}
                         className={cx('home__video-comment-input')}
                         placeholder="Add a comment..."
-                        onInput={handleInput}
-                        onFocus={handleTyping}
+                        onInput={(e) => {
+                            setCommentTexts(e.target.value);
+                        }}
+                        onFocus={() => {
+                            setIsTyping(true);
+                        }}
                     />
                     {isTyping ? (
                         <div className={cx('home__video-comment-action')}>

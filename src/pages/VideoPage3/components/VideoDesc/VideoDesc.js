@@ -1,6 +1,7 @@
 import Tippy from '@tippyjs/react';
 import classNames from 'classnames/bind';
 import { useState } from 'react';
+import { BellSubscribeIcon } from '~/components/Icons';
 import styles from './VideoDesc.module.scss';
 
 const cx = classNames.bind(styles);
@@ -26,9 +27,14 @@ function VideoDesc({ channelName, img, subscribe }) {
                     </div>
                 </div>
                 {isSubcribe ? (
-                    <button className={cx('subscribe-btn-inactive')} onClick={handleSubscribe}>
-                        SUBSCRIBED
-                    </button>
+                    <div className={cx('subscribe-btn-subscribed')}>
+                        <button className={cx('subscribe-btn-inactive')} onClick={handleSubscribe}>
+                            SUBSCRIBED
+                        </button>
+                        <span className={cx('subscribe-bell-icon')}>
+                            <BellSubscribeIcon />
+                        </span>
+                    </div>
                 ) : (
                     <button className={cx('subscribe-btn')} onClick={handleSubscribe}>
                         SUBSCRIBE

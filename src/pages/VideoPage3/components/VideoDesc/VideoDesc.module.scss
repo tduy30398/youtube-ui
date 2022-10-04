@@ -40,15 +40,9 @@
     line-height: 1.6rem;
 }
 
-.subscribe-btn {
-    cursor: pointer;
-    font-weight: 500;
-    font-size: 1.2rem;
-    width: 90px;
-    height: 30px;
-    border-radius: 3px;
-    background-color: #cc0000;
-    color: var(--white);
+.subscribe-btn-subscribed {
+    display: flex;
+    align-items: center;
 }
 
 .subscribe-btn-inactive {
@@ -60,6 +54,25 @@
     border-radius: 3px;
     background-color: #ececec;
     color: #606060;
+    margin-right: 4px;
+}
+
+.subscribe-bell-icon {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.subscribe-btn {
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1.2rem;
+    width: 90px;
+    height: 30px;
+    border-radius: 3px;
+    background-color: #cc0000;
+    color: var(--white);
 }
 
 .video-description-wrapper {
