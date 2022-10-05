@@ -1,0 +1,18 @@
+.video-player-action {
+    cursor: pointer;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.icon,
+.active-icon {
+    padding: 4px;
+}
+
+.title {
+    color: rgb(3, 3, 3);
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding-bottom: 5px;
+}

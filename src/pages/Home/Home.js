@@ -78,7 +78,7 @@ function Home() {
                         uploadTime={'Apr 23, 2019'}
                     />
                     <Video
-                        to={config.video.video1}
+                        to={config.video.video4}
                         thumb={
                             'https://i.ytimg.com/vi/YhAGk8jIKLs/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBsKv_xv3aQTIr4d9iil44V2LKMew'
                         }
@@ -94,7 +94,7 @@ function Home() {
                 </div>
                 <div className={cx('grid__row-n')}>
                     <Video
-                        to={config.video.video1}
+                        to={config.video.video5}
                         thumb={
                             'https://i.ytimg.com/vi/hU8p711l_fI/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAGgj47r1K51mlKXh67Vpo4Hu-vzQ'
                         }
@@ -108,7 +108,7 @@ function Home() {
                         uploadTime={'4 weeks ago'}
                     />
                     <Video
-                        to={config.video.video1}
+                        to={config.video.video6}
                         thumb={
                             'https://i.ytimg.com/vi/BHTdpkR4Jqc/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBRLpsoNTTNbyzLV_HLk2L7Ewrk-g'
                         }
@@ -122,7 +122,7 @@ function Home() {
                         uploadTime={'3 weeks ago'}
                     />
                     <Video
-                        to={config.video.video1}
+                        to={config.video.video7}
                         thumb={
                             'https://i.ytimg.com/vi/8T9MPAT0Rpw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAn3MwS4Gal4UeeoQAZGALjhoG_GQ'
                         }
@@ -136,7 +136,7 @@ function Home() {
                         uploadTime={'6 months ago'}
                     />
                     <Video
-                        to={config.video.video1}
+                        to={config.video.video8}
                         thumb={
                             'https://i.ytimg.com/vi/FMddJcaDnRo/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC9OdsMcBkssNFVagCEZbPYd-UKaw'
                         }
@@ -152,7 +152,7 @@ function Home() {
                 </div>
                 <div className={cx('grid__row-n')}>
                     <Video
-                        to={config.video.video1}
+                        to={config.video.video9}
                         thumb={
                             'https://i.ytimg.com/vi/IEiljbZtj-o/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDtpG2UXywvmTi65w_KnP83TCuKfQ'
                         }
@@ -168,7 +168,7 @@ function Home() {
                         uploadTime={'10 hours ago'}
                     />
                     <Video
-                        to={config.video.video1}
+                        to={config.video.video10}
                         thumb={
                             'https://i.ytimg.com/vi/9tcFnx0-cQY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCz0ALF68H2GJr_aCym5ClnThWOTQ'
                         }
@@ -182,7 +182,7 @@ function Home() {
                         uploadTime={'1 month ago'}
                     />
                     <Video
-                        to={config.video.video1}
+                        to={config.video.video11}
                         thumb={
                             'https://i.ytimg.com/vi/25yJjSi5pcc/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBhDNaX_257Q0DZ_FXiKqv15_EGPg'
                         }
@@ -198,23 +198,23 @@ function Home() {
                         uploadTime={'1 month ago'}
                     />
                     <Video
-                        to={config.video.video1}
+                        to={config.video.video12}
                         thumb={
-                            'https://i.ytimg.com/vi/cBClD7jylos/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAHNMSuUnUEHPE5DUgmioFYOJ_sBQ'
+                            'https://i.ytimg.com/vi/zSNgmQx-QqU/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDFlOnw-vEEkvCBtztIKtt-xGm6Vw'
                         }
                         avatar={
-                            'https://yt3.ggpht.com/TpcGt3U8tv_KK49whh5ICjJFQxBze7NeqiDGMlw25CoZv-TBWIknnGydthZTzK1G4yYaAbgtUro=s88-c-k-c0x00ffffff-no-rj'
+                            'https://yt3.ggpht.com/k6_T7dtb4qeLNSPid-5kK9RsjnI1_5jt5EV5mVTYbsVRMcKAKuM2fbXmYbOwgGTAOvfuDAy8mA=s88-c-k-c0x00ffffff-no-rj'
                         }
-                        runtime={'4:47'}
-                        title={'EM GÌ ƠI | K-ICM x JACK | OFFICIAL MUSIC VIDEO'}
-                        channelName={'ICM Entertainment'}
-                        view={'347M views'}
-                        uploadTime={'2 years ago'}
+                        runtime={'3:46'}
+                        title={'QUANG HÙNG MASTERD - Đừng Khóc Một Mình (Official Lyric Video)'}
+                        channelName={'Quang Hùng MasterD'}
+                        view={'4.2M views'}
+                        uploadTime={'3 years ago'}
                     />
                 </div>
                 <div className={cx('grid__row-n')}>
                     <Video
-                        to={config.video.video1}
+                        to={config.video.video13}
                         thumb={
                             'https://i.ytimg.com/vi/j8U06veqxdU/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBslvrMrhmD73svlenypwgGZY4J1Q'
                         }
@@ -228,7 +228,7 @@ function Home() {
                         uploadTime={'3 years ago'}
                     />
                     <Video
-                        to={config.video.video1}
+                        to={config.video.video14}
                         thumb={
                             'https://i.ytimg.com/vi/RAWjdACpiVw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA7tSbT1czFMQmeRSXUx3BDa5rsiA'
                         }
@@ -242,7 +242,7 @@ function Home() {
                         uploadTime={'8 days ago'}
                     />
                     <Video
-                        to={config.video.video1}
+                        to={config.video.video15}
                         thumb={
                             'https://i.ytimg.com/vi/JcNfxct8LgY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBxedBMH7NC4RQW82huOyiDve_clQ'
                         }
@@ -258,7 +258,7 @@ function Home() {
                         uploadTime={'1 year ago'}
                     />
                     <Video
-                        to={config.video.video1}
+                        to={config.video.video16}
                         thumb={
                             'https://i.ytimg.com/vi/VOF38bs7K_8/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAR1y_CJNHDlkQTSz9_Cc99bs8xhw'
                         }
@@ -269,7 +269,7 @@ function Home() {
                         title={
                             'ARSENAL - TOTTENHAM | PHÁO THỦ BÙNG NỔ, GÀ TRỐNG NGẬM NGÙI SAU TẤM THẺ ĐỎ | NGOẠI HẠNG ANH 22/23'
                         }
-                        channelName={'Sang vlog'}
+                        channelName={'Kplus Sports'}
                         view={'50k views'}
                         uploadTime={'13 minutes ago'}
                     />

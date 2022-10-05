@@ -9,7 +9,7 @@ import { default as PopperWrapper } from '~/components/Popper/Wrapper';
 import SearchResult from '~/components/SearchResult/SearchResult';
 import { ClearIcon, SearchIcon } from '~/components/Icons';
 import { useEffect, useRef, useState } from 'react';
-import { useDebounce } from '~/hooks';
+import useDebounce from '~/hooks/useDeboune/useDeboune';
 
 const cx = classNames.bind(styles);
 

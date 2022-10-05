@@ -55,9 +55,23 @@
 .icon {
     padding: 4px;
 }
+
 .title {
     color: rgb(3, 3, 3);
     font-size: 1.2rem;
     font-weight: 500;
     padding-bottom: 5px;
+}
+
+// Commment
+
+.home__video-comment-wrapper {
+    --text-color: #030303;
+    width: 100%;
+    height: 100%;
+}
+
+.home__video-comment-list {
+    display: flex;
+    flex-direction: column;
 }

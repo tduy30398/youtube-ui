@@ -291,7 +291,7 @@ function Header() {
                             <Tippy content="Notifications">
                                 <button className={cx('action-btn')}>
                                     <BellIcon />
-                                    <span className={cx('badge')}>99</span>
+                                    <span className={cx('badge')}>12</span>
                                 </button>
                             </Tippy>
 
