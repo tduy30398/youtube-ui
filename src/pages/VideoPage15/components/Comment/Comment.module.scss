@@ -8,6 +8,10 @@
         .home__video-comment-top-right {
             display: block;
         }
+
+        .home__video-comment-top-right-transparent {
+            display: none;
+        }
     }
 }
 
@@ -23,14 +27,6 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-}
-
-.home__video-comment-top-content {
-    width: 660px;
-    margin-right: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .home__video-comment-top-left {
@@ -53,15 +49,26 @@
     font-size: 1.2rem;
     cursor: pointer;
 }
-
 .home__video-comment-top-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 2px;
     color: var(--text-color);
+}
+
+.home__video-comment-top-right-wrapper {
+    display: flex;
 }
 
 .home__video-comment-top-right {
     cursor: pointer;
     display: none;
+}
+
+.home__video-comment-top-right-transparent {
+    width: 24px;
+    height: 30px;
 }
 
 .home__video-comment-bottom-content {

@@ -38,9 +38,12 @@ function Comment({ img, userName, time, content, likeNumber }) {
                         </div>
                         <div className={cx('home__video-comment-top-content')}>{content}</div>
                     </div>
-                    <span className={cx('home__video-comment-top-right')}>
-                        <MoreVerticalIcon />
-                    </span>
+                    <div className={cx('home__video-comment-top-right-wrapper')}>
+                        <span className={cx('home__video-comment-top-right')}>
+                            <MoreVerticalIcon />
+                        </span>
+                        <span className={cx('home__video-comment-top-right-transparent')}></span>
+                    </div>
                 </div>
                 <div className={cx('home__video-comment-bottom-content')}>
                     <span className={cx('home__video-comment-like')}>

@@ -38,9 +38,12 @@ function Video({ to, thumb, avatar, runtime, title, channelName, view, uploadTim
                             <Tippy content={title} placement="bottom" delay={[500, 0]}>
                                 <h4 className={cx('home__video-title')}>{title}</h4>
                             </Tippy>
-                            <span className={cx('home__video-title-icon')}>
-                                <MoreVerticalIcon />
-                            </span>
+                            <div className={cx('home__video-title-icon-wrapper')}>
+                                <span className={cx('home__video-title-icon')}>
+                                    <MoreVerticalIcon />
+                                </span>
+                                <span className={cx('home__video-title-icon-transparent')}></span>
+                            </div>
                         </div>
                         <Tippy content={channelName} placement="bottom" delay={[500, 0]}>
                             <div className={cx('home__video-channel-name')}>{channelName}</div>

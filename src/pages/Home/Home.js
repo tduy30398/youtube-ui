@@ -92,7 +92,7 @@ function Home() {
                         uploadTime={'3 days ago'}
                     />
                 </div>
-                <div className={cx('grid__row-n')}>
+                <div className={cx('grid__row')}>
                     <Video
                         to={config.video.video5}
                         thumb={
@@ -150,7 +150,7 @@ function Home() {
                         uploadTime={'2 weeks ago'}
                     />
                 </div>
-                <div className={cx('grid__row-n')}>
+                <div className={cx('grid__row')}>
                     <Video
                         to={config.video.video9}
                         thumb={
@@ -212,7 +212,7 @@ function Home() {
                         uploadTime={'3 years ago'}
                     />
                 </div>
-                <div className={cx('grid__row-n')}>
+                <div className={cx('grid__row')}>
                     <Video
                         to={config.video.video13}
                         thumb={

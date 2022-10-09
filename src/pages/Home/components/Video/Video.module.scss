@@ -34,6 +34,10 @@
         .home__video-title-icon {
             display: block;
         }
+
+        .home__video-title-icon-transparent {
+            display: none;
+        }
     }
 }
 
@@ -92,7 +96,6 @@
 
 .home__video-title {
     margin-right: 5px;
-    width: 200px;
     font-size: 1.3rem;
     font-weight: 600;
     overflow: hidden;
@@ -103,8 +106,17 @@
     text-overflow: ellipsis;
 }
 
+.home__video-title-icon-wrapper {
+    display: flex;
+}
+
 .home__video-title-icon {
     display: none;
+}
+
+.home__video-title-icon-transparent {
+    height: 100%;
+    width: 24px;
 }
 
 .home__video-channel-name {
