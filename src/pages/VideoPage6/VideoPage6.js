@@ -34,7 +34,7 @@ function VideoPage6() {
             <div className={cx('video-player-info')}>
                 <h3 className={cx('video-player-name')}>{'#455 Rốt Cuộc, Trái Đất Có Phải Trung Tâm Của Vũ Trụ???'}</h3>
                 <div className={cx('video-player-detail')}>
-                    <div className={cx('video-player-sub-info')}>
+                    <div className={cx('video-player-sub-info', 'hide-on-mobile')}>
                         <span className={cx('home__video-views')}>{'315,694 views'}</span>
                         <span className={cx('home__video-split')}>{'•'}</span>
                         <span className={cx('home__video-upload-time')}>{'Sep 5, 2022'}</span>

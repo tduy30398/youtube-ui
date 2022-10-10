@@ -36,7 +36,7 @@ function VideoPage12() {
                     {'QUANG HÙNG MASTERD - Đừng Khóc Một Mình (Official Lyric Video)'}
                 </h3>
                 <div className={cx('video-player-detail')}>
-                    <div className={cx('video-player-sub-info')}>
+                    <div className={cx('video-player-sub-info', 'hide-on-mobile')}>
                         <span className={cx('home__video-views')}>{'4,269,247 views'}</span>
                         <span className={cx('home__video-split')}>{'•'}</span>
                         <span className={cx('home__video-upload-time')}>{'Jul 20, 2019'}</span>

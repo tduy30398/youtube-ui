@@ -34,7 +34,7 @@ function VideoPage8() {
             <div className={cx('video-player-info')}>
                 <h3 className={cx('video-player-name')}>{'Những đứa trẻ không lớn | Recap Xàm #305 Grown-ups 1'}</h3>
                 <div className={cx('video-player-detail')}>
-                    <div className={cx('video-player-sub-info')}>
+                    <div className={cx('video-player-sub-info', 'hide-on-mobile')}>
                         <span className={cx('home__video-views')}>{'130,701,568 views'}</span>
                         <span className={cx('home__video-split')}>{'•'}</span>
                         <span className={cx('home__video-upload-time')}>{'Sep 17, 2022'}</span>

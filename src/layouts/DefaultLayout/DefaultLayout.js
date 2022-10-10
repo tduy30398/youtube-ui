@@ -10,12 +10,12 @@ function DefaultLayout({ children }) {
         <div className={cx('wrapper')}>
             <Header />
             <div className={cx('container')}>
-                <div className={cx('grid')}>
-                    <div className={cx('grid__row')}>
-                        <div className={cx('grid__column-2')}>
+                <div className={cx('grid wide')}>
+                    <div className={cx('row')}>
+                        <div className={cx('col l-2 m-0 c-0')}>
                             <Sidebar />
                         </div>
-                        <div className={cx('grid__column-10')}>
+                        <div className={cx('col l-10 m-12 c-12')}>
                             <div className={cx('content')}>{children}</div>
                         </div>
                     </div>

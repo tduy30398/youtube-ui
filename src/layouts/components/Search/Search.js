@@ -64,7 +64,11 @@ function Search() {
                 offset={[0, 12]}
                 visible={isFocus && searchResult.length > 0}
                 render={(attrs) => (
-                    <div className={cx('search-result-list')} tabIndex="-1" {...attrs}>
+                    <div
+                        className={cx('search-result-list', 'search-tablet-width', 'hide-on-mobile')}
+                        tabIndex="-1"
+                        {...attrs}
+                    >
                         <PopperWrapper>
                             {searchResult.map((result) => (
                                 <SearchResult key={result.id} data={result} />
@@ -74,7 +78,7 @@ function Search() {
                 )}
                 onClickOutside={handleHideResults}
             >
-                <div className={cx('search')}>
+                <div className={cx('search', 'search-tablet-width', 'hide-on-mobile')}>
                     <input
                         ref={inputRef}
                         value={searchValue}

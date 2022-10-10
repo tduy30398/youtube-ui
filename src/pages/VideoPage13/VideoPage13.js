@@ -34,7 +34,7 @@ function VideoPage13() {
             <div className={cx('video-player-info')}>
                 <h3 className={cx('video-player-name')}>{'SÓNG GIÓ | K-ICM x JACK | OFFICIAL MUSIC VIDEO'}</h3>
                 <div className={cx('video-player-detail')}>
-                    <div className={cx('video-player-sub-info')}>
+                    <div className={cx('video-player-sub-info', 'hide-on-mobile')}>
                         <span className={cx('home__video-views')}>{'413,659,447 views'}</span>
                         <span className={cx('home__video-split')}>{'•'}</span>
                         <span className={cx('home__video-upload-time')}>{'Premiered Jul 12, 2019'}</span>

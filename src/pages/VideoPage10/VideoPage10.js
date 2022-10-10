@@ -36,7 +36,7 @@ function VideoPage10() {
                     {'NGƯỜI ĐÁNG THƯƠNG LÀ ANH - ONLY C X NGUYỄN PHÚC THIỆN | OFFICIAL MUSIC VIDEO'}
                 </h3>
                 <div className={cx('video-player-detail')}>
-                    <div className={cx('video-player-sub-info')}>
+                    <div className={cx('video-player-sub-info', 'hide-on-mobile')}>
                         <span className={cx('home__video-views')}>{'6,799,162 views'}</span>
                         <span className={cx('home__video-split')}>{'•'}</span>
                         <span className={cx('home__video-upload-time')}>{'Premiered Aug 3, 2022'}</span>

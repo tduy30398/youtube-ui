@@ -36,7 +36,7 @@ function VideoPage4() {
                     {'51H SINH TỒN 1 Mình Trong Khu Rừng Mưa Khắc Nghiệt Nhất | Solo Survival'}
                 </h3>
                 <div className={cx('video-player-detail')}>
-                    <div className={cx('video-player-sub-info')}>
+                    <div className={cx('video-player-sub-info', 'hide-on-mobile')}>
                         <span className={cx('home__video-views')}>{'1,057,981 views'}</span>
                         <span className={cx('home__video-split')}>{'•'}</span>
                         <span className={cx('home__video-upload-time')}>{'Sep 25, 2022'}</span>

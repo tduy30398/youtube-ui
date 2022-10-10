@@ -36,7 +36,7 @@ function VideoPage1() {
                     {'CON TÀU NOAH: TRUYỀN THUYẾT TRONG KINH THÁNH HAY THỰC SỰ TỪNG TỒN TẠI?'}
                 </h3>
                 <div className={cx('video-player-detail')}>
-                    <div className={cx('video-player-sub-info')}>
+                    <div className={cx('video-player-sub-info', 'hide-on-mobile')}>
                         <span className={cx('home__video-views')}>{'32,054 views'}</span>
                         <span className={cx('home__video-split')}>{'•'}</span>
                         <span className={cx('home__video-upload-time')}>{'Oct 1, 2022'}</span>

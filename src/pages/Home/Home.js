@@ -10,7 +10,7 @@ function Home() {
     return (
         <div className={cx('video-content-area')}>
             <nav className={cx('container-menu')}>
-                <ul className={cx('container_scroll-list')}>
+                <ul className={cx('container_scroll-list', 'menu-item-margin')}>
                     <ContainerItems name="All" active />
                     <ContainerItems name="Mixes" />
                     <ContainerItems name="Music" />
@@ -34,7 +34,7 @@ function Home() {
                 </ul>
             </nav>
             <div className={cx('container-list-video')}>
-                <div className={cx('grid__row')}>
+                <div className={cx('row', 'row-content')}>
                     <Video
                         to={config.video.video1}
                         thumb={
@@ -62,6 +62,7 @@ function Home() {
                         channelName={'Hiền Hồ Official'}
                         view={'130M views'}
                         uploadTime={'4 years ago'}
+                        className="margin-mobile"
                     />
                     <Video
                         to={config.video.video3}
@@ -76,6 +77,7 @@ function Home() {
                         channelName={'Chi Pu Official'}
                         view={'108M views'}
                         uploadTime={'Apr 23, 2019'}
+                        className="margin-tablet margin-mobile"
                     />
                     <Video
                         to={config.video.video4}
@@ -90,9 +92,10 @@ function Home() {
                         channelName={'Sang vlog'}
                         view={'2.3M views'}
                         uploadTime={'3 days ago'}
+                        className="margin-tablet margin-mobile"
                     />
                 </div>
-                <div className={cx('grid__row')}>
+                <div className={cx('row', 'row-content')}>
                     <Video
                         to={config.video.video5}
                         thumb={
@@ -120,6 +123,7 @@ function Home() {
                         channelName={'VFacts'}
                         view={'306K views'}
                         uploadTime={'3 weeks ago'}
+                        className="margin-mobile"
                     />
                     <Video
                         to={config.video.video7}
@@ -134,6 +138,7 @@ function Home() {
                         channelName={'Survival Beast'}
                         view={'5.3M views'}
                         uploadTime={'6 months ago'}
+                        className="margin-tablet margin-mobile"
                     />
                     <Video
                         to={config.video.video8}
@@ -148,9 +153,10 @@ function Home() {
                         channelName={'The Reviewer'}
                         view={'111k views'}
                         uploadTime={'2 weeks ago'}
+                        className="margin-tablet margin-mobile"
                     />
                 </div>
-                <div className={cx('grid__row')}>
+                <div className={cx('row', 'row-content')}>
                     <Video
                         to={config.video.video9}
                         thumb={
@@ -180,6 +186,7 @@ function Home() {
                         channelName={'OnlyC Production'}
                         view={'6.4M views'}
                         uploadTime={'1 month ago'}
+                        className="margin-mobile"
                     />
                     <Video
                         to={config.video.video11}
@@ -196,6 +203,7 @@ function Home() {
                         channelName={'Khi Phải Quên Đi'}
                         view={'221K views'}
                         uploadTime={'1 month ago'}
+                        className="margin-tablet margin-mobile"
                     />
                     <Video
                         to={config.video.video12}
@@ -210,9 +218,10 @@ function Home() {
                         channelName={'Quang Hùng MasterD'}
                         view={'4.2M views'}
                         uploadTime={'3 years ago'}
+                        className="margin-tablet margin-mobile"
                     />
                 </div>
-                <div className={cx('grid__row')}>
+                <div className={cx('row', 'row-content')}>
                     <Video
                         to={config.video.video13}
                         thumb={
@@ -240,6 +249,7 @@ function Home() {
                         channelName={'Phê Phim'}
                         view={'340K views'}
                         uploadTime={'8 days ago'}
+                        className="margin-mobile"
                     />
                     <Video
                         to={config.video.video15}
@@ -256,6 +266,7 @@ function Home() {
                         channelName={'KHOẢNH KHẮC KỲ DIỆU'}
                         view={'2.7M views'}
                         uploadTime={'1 year ago'}
+                        className="margin-tablet margin-mobile"
                     />
                     <Video
                         to={config.video.video16}
@@ -272,6 +283,7 @@ function Home() {
                         channelName={'Kplus Sports'}
                         view={'50k views'}
                         uploadTime={'13 minutes ago'}
+                        className="margin-tablet margin-mobile"
                     />
                 </div>
             </div>

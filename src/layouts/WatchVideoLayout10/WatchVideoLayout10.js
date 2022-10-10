@@ -12,11 +12,11 @@ function WatchVideoLayout10({ children }) {
             <Header />
             <div className={cx('container')}>
                 <div className={cx('grid')}>
-                    <div className={cx('grid__row')}>
-                        <div className={cx('grid__column-2')}>
+                    <div className={cx('row', 'grid__row')}>
+                        <div className={cx('col wide l-8 m-12 c-12')}>
                             <div className={cx('content')}>{children}</div>
                         </div>
-                        <div className={cx('grid__column-1')}>
+                        <div className={cx('col l-4 m-0 c-0')}>
                             <div className={cx('container-video-right')}>
                                 <Video2
                                     to={config.video.video3}

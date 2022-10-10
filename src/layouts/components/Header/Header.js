@@ -265,59 +265,61 @@ function Header() {
 
     return (
         <div className={cx('wrapper')}>
-            <div className={cx('inner')}>
-                <div className={cx('logo-area')}>
-                    <button className={cx('sidebar-menu-btn')}>
-                        <HamburgerIcon />
-                    </button>
-                    <Tippy content="Youtube Home" delay={[400, 0]}>
-                        <Link to={config.routes.home} className={cx('logo')}>
-                            <img src={images.logo} alt="Youtube" />
-                        </Link>
-                    </Tippy>
-                </div>
+            <div className={cx('grid wide')}>
+                <div className={cx('inner')}>
+                    <div className={cx('logo-area')}>
+                        <button className={cx('sidebar-menu-btn')}>
+                            <HamburgerIcon />
+                        </button>
+                        <Tippy content="Youtube Home" delay={[400, 0]}>
+                            <Link to={config.routes.home} className={cx('logo')}>
+                                <img src={images.logo} alt="Youtube" />
+                            </Link>
+                        </Tippy>
+                    </div>
 
-                <Search />
+                    <Search />
 
-                <div className={cx('actions')}>
-                    {currentUser ? (
-                        <>
-                            <Tippy content="Create">
-                                <button className={cx('action-btn')}>
-                                    <VideoIcon />
-                                </button>
-                            </Tippy>
-
-                            <Tippy content="Notifications">
-                                <button className={cx('action-btn')}>
-                                    <BellIcon />
-                                    <span className={cx('badge')}>12</span>
-                                </button>
-                            </Tippy>
-
-                            <Menu items={userMenu}>
-                                <img
-                                    className={cx('user-avatar')}
-                                    src="https://yt3.ggpht.com/yti/AJo0G0mD_lS-q4dP0E025WFIeUP8Duqsc24RLbygR5kQzQ=s88-c-k-c0x00ffffff-no-rj-mo"
-                                    alt="avatar"
-                                />
-                            </Menu>
-                        </>
-                    ) : (
-                        <>
-                            <Menu items={MENU_ITEMS}>
-                                <Tippy content="Settings">
-                                    <button className={cx('more-btn')}>
-                                        <EllipsisIcon />
+                    <div className={cx('actions')}>
+                        {currentUser ? (
+                            <>
+                                <Tippy content="Create">
+                                    <button className={cx('action-btn')}>
+                                        <VideoIcon />
                                     </button>
                                 </Tippy>
-                            </Menu>
 
-                            <Button outline leftIcon={<UserIcon />}>
-                                SIGN IN
-                            </Button>
-                        </>
-                    )}
+                                <Tippy content="Notifications">
+                                    <button className={cx('action-btn')}>
+                                        <BellIcon />
+                                        <span className={cx('badge')}>12</span>
+                                    </button>
+                                </Tippy>
+
+                                <Menu items={userMenu}>
+                                    <img
+                                        className={cx('user-avatar')}
+                                        src="https://yt3.ggpht.com/yti/AJo0G0mD_lS-q4dP0E025WFIeUP8Duqsc24RLbygR5kQzQ=s88-c-k-c0x00ffffff-no-rj-mo"
+                                        alt="avatar"
+                                    />
+                                </Menu>
+                            </>
+                        ) : (
+                            <>
+                                <Menu items={MENU_ITEMS}>
+                                    <Tippy content="Settings">
+                                        <button className={cx('more-btn')}>
+                                            <EllipsisIcon />
+                                        </button>
+                                    </Tippy>
+                                </Menu>
+
+                                <Button outline leftIcon={<UserIcon />}>
+                                    SIGN IN
+                                </Button>
+                            </>
+                        )}
+                    </div>
                 </div>
             </div>
         </div>

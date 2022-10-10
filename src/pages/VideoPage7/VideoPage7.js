@@ -34,7 +34,7 @@ function VideoPage7() {
             <div className={cx('video-player-info')}>
                 <h3 className={cx('video-player-name')}>{'Giant Rainbow Lobster Catch And Cook'}</h3>
                 <div className={cx('video-player-detail')}>
-                    <div className={cx('video-player-sub-info')}>
+                    <div className={cx('video-player-sub-info', 'hide-on-mobile')}>
                         <span className={cx('home__video-views')}>{'5,383,120 views'}</span>
                         <span className={cx('home__video-split')}>{'•'}</span>
                         <span className={cx('home__video-upload-time')}>{'Mar 28, 2022'}</span>

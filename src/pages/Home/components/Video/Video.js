@@ -2,13 +2,13 @@ import classNames from 'classnames/bind';
 import styles from './Video.module.scss';
 import { Link } from 'react-router-dom';
 import Tippy from '@tippyjs/react';
-import { ClockIcon, MoreVerticalIcon, PlayIcon, QueueIcon } from '~/components/Icons';
+import { ClockIcon, PlayIcon, QueueIcon } from '~/components/Icons';
 
 const cx = classNames.bind(styles);
 
-function Video({ to, thumb, avatar, runtime, title, channelName, view, uploadTime }) {
+function Video({ to, thumb, avatar, runtime, title, channelName, view, uploadTime, className }) {
     return (
-        <Link to={to} className={cx('grid__column-1-4')}>
+        <Link to={to} className={cx('col l-3 m-6 c-12', className)}>
             <div className={cx('home__video')}>
                 <div className={cx('home-video-img')}>
                     <img className={cx('home__video-thumb')} src={thumb} alt="video" />
@@ -34,17 +34,9 @@ function Video({ to, thumb, avatar, runtime, title, channelName, view, uploadTim
                         <img className={cx('home__video-avatar')} src={avatar} alt="video"></img>
                     </Tippy>
                     <div className={cx('home__video-info')}>
-                        <div className={cx('home__video-title-wrapper')}>
-                            <Tippy content={title} placement="bottom" delay={[500, 0]}>
-                                <h4 className={cx('home__video-title')}>{title}</h4>
-                            </Tippy>
-                            <div className={cx('home__video-title-icon-wrapper')}>
-                                <span className={cx('home__video-title-icon')}>
-                                    <MoreVerticalIcon />
-                                </span>
-                                <span className={cx('home__video-title-icon-transparent')}></span>
-                            </div>
-                        </div>
+                        <Tippy content={title} placement="bottom" delay={[500, 0]}>
+                            <h4 className={cx('home__video-title')}>{title}</h4>
+                        </Tippy>
                         <Tippy content={channelName} placement="bottom" delay={[500, 0]}>
                             <div className={cx('home__video-channel-name')}>{channelName}</div>
                         </Tippy>

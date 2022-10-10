@@ -34,7 +34,7 @@ function VideoPage14() {
             <div className={cx('video-player-info')}>
                 <h3 className={cx('video-player-name')}>{'AVATAR: Hành trình tạo nên MỘT HUYỀN THOẠI'}</h3>
                 <div className={cx('video-player-detail')}>
-                    <div className={cx('video-player-sub-info')}>
+                    <div className={cx('video-player-sub-info', 'hide-on-mobile')}>
                         <span className={cx('home__video-views')}>{'365,205 views'}</span>
                         <span className={cx('home__video-split')}>{'•'}</span>
                         <span className={cx('home__video-upload-time')}>{'Sep 23, 2022'}</span>

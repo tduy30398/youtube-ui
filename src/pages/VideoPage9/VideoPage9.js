@@ -36,7 +36,7 @@ function VideoPage9() {
                     {'BIẾT GIÚP AI ĐÂY #15 | COMEBACK CỰC MẠNH SERIES BẰNG CÔNG THỨC BECKHAM ICON +5...BẤT NGỜ CHƯA?'}
                 </h3>
                 <div className={cx('video-player-detail')}>
-                    <div className={cx('video-player-sub-info')}>
+                    <div className={cx('video-player-sub-info', 'hide-on-mobile')}>
                         <span className={cx('home__video-views')}>{'41,838 views'}</span>
                         <span className={cx('home__video-split')}>{'•'}</span>
                         <span className={cx('home__video-upload-time')}>{'Oct 1, 2022'}</span>

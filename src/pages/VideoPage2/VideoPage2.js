@@ -36,7 +36,7 @@ function VideoPage2() {
                     {'Rồi Người Thương Cũng Hóa Người Dưng - Official MV | Hiền Hồ'}
                 </h3>
                 <div className={cx('video-player-detail')}>
-                    <div className={cx('video-player-sub-info')}>
+                    <div className={cx('video-player-sub-info', 'hide-on-mobile')}>
                         <span className={cx('home__video-views')}>{'130,701,568 views'}</span>
                         <span className={cx('home__video-split')}>{'•'}</span>
                         <span className={cx('home__video-upload-time')}>{'May 4, 2018'}</span>
