@@ -1,8 +1,8 @@
 import classNames from 'classnames/bind';
-import ContainerItems from './components/ContainerItems';
 import styles from './Home.module.scss';
 import Video from './components/Video/Video';
 import config from '~/config';
+import ContainerMenu from './components/ContainerMenu';
 
 const cx = classNames.bind(styles);
 
@@ -10,28 +10,7 @@ function Home() {
     return (
         <div className={cx('video-content-area')}>
             <nav className={cx('container-menu')}>
-                <ul className={cx('container_scroll-list', 'menu-item-margin')}>
-                    <ContainerItems name="All" active />
-                    <ContainerItems name="Mixes" />
-                    <ContainerItems name="Music" />
-                    <ContainerItems name="Live" />
-                    <ContainerItems name="Sport" />
-                    <ContainerItems name="Premier League" />
-                    <ContainerItems name="World Cup" />
-                    <ContainerItems name="Programming" />
-                    <ContainerItems name="Anime" />
-                    <ContainerItems name="News" />
-                    <ContainerItems name="AI" />
-                    <ContainerItems name="Movie" />
-                    <ContainerItems name="Kids" />
-                    <ContainerItems name="Super Natural" />
-                    <ContainerItems name="Comedy" />
-                    <ContainerItems name="Watched" />
-                    <ContainerItems name="Love" />
-                    <ContainerItems name="Dating" />
-                    <ContainerItems name="Aerospace" />
-                    <ContainerItems name="English" />
-                </ul>
+                <ContainerMenu />
             </nav>
             <div className={cx('container-list-video')}>
                 <div className={cx('row', 'row-content')}>

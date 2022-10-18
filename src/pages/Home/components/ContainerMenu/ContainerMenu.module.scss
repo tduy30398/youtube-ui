@@ -1,0 +1,13 @@
+.container_scroll-list {
+    display: flex;
+    border-top: 1px solid rgba(18, 18, 26, 0.12);
+    border-bottom: 1px solid rgba(18, 18, 26, 0.12);
+    padding-left: 12px;
+    overflow-x: auto;
+    z-index: 1;
+    background-color: rgb(255, 255, 255);
+}
+
+.container_scroll-list::-webkit-scrollbar {
+    display: none;
+}
